@@ -6,7 +6,7 @@
    display: flex;
    align-items: center;
    justify-content: space-around;
-   z-index: 1;
+   z-index: 1
 }
 .header_tour_packeges {
    background-color: rgba(181, 181, 181, 0.221);
@@ -58,7 +58,17 @@
    background-color: #fa8b02;
    border-radius: 20px;
 }
-
+.btn_active_login {
+   border: none;
+   color: #000;
+   outline: none;
+   background-color: transparent;
+   font-weight: 600;
+   font-size: 0.9rem;
+}
+.btn_active_login:hover {
+   opacity: 0.7;
+}
 @media (max-width: 1100px) {
    .header {
       height: 70px;

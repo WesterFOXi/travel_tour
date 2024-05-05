@@ -65,8 +65,8 @@ const Purchase = () => {
                isStage={isStage}
             />
          </div>
-         <button onClick={() => setStage((prev) => prev - 1)}>back</button>
-         <button onClick={() => setStage((prev) => prev + 1)}>go</button>
+         {/* <button onClick={() => setStage((prev) => prev - 1)}>back</button>
+         <button onClick={() => setStage((prev) => prev + 1)}>go</button> */}
       </div>
    );
 };

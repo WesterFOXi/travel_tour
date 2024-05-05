@@ -8,7 +8,7 @@ const CardTour = ({ image_main, name, price, date, people, body, id, }) => {
    return (
       <div className={cls.card}>
          <Link className={cls.link_tour}
-            to={`/TourPackeges/Card/${id}`}>
+            to={`/TourPackages/Card/${id}`}>
             <img src={image_main} alt="img" />
             <div className={cls.content_card}>
                <h3 className={cls.name_card}>

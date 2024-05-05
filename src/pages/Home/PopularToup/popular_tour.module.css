@@ -54,8 +54,9 @@
    cursor: pointer;
 }
 .cards_conteiner {
+   width: 1100px;
    margin-top: 10px;
-   justify-content: center;
+   justify-content: space-around;
    transition: 1s all;
    display: flex;
 }
@@ -70,7 +71,11 @@
    .block_text_and_arrow p {
       font-size: 1.2rem;
    }
+   .cards_conteiner > div {
+      padding-bottom: 10px;
+   }
    .cards_conteiner {
-      max-width: 900px;
+      flex-wrap: wrap;
+      max-width: 700px;
    }
 }

@@ -3,7 +3,7 @@ import "../src/App.css";
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AbouUs/AboutUs";
 import ContactUs from "./pages/ContactUs/ContactUs";
-import TourPackeges from "./pages/TourPackeges/TourPackeges";
+import TourPackages from "./pages/TourPackages/TourPackages";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Layout from "./Layout";
 import SearchResults from "./pages/SearchResults/SearchResults";
@@ -44,7 +44,7 @@ function App() {
                   }
                />
                <Route path="AboutUs" element={<AboutUs />} />
-               <Route path="TourPackeges" element={<TourPackeges />} />
+               <Route path="TourPackages" element={<TourPackages />} />
                <Route path="ContactUs" element={<ContactUs />} />
                <Route
                   path="SearchTour"
@@ -56,12 +56,12 @@ function App() {
                   }
                />
                <Route
-                  path="TourPackeges/Card/:tourId"
+                  path="TourPackages/Card/:tourId"
                   element={<CardTourDetails />}
                />
                <Route path="account" element={<Account />} />
                <Route
-                  path="TourPackeges/Card/purchase/:tourId/:date"
+                  path="TourPackages/Card/purchase/:tourId/:date"
                   element={<Purchase />}
                />
                <Route path="*" element={<NotFoundPage />} />

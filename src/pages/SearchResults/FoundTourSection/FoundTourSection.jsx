@@ -1,7 +1,6 @@
 import React from "react";
 import cls from "./found_tour_section.module.css";
 import { FaEuroSign } from "react-icons/fa";
-import Button from "./../../../components/Button/Button";
 import TourDetailsInfo from "./../../CardTourDetails/TourDetailsInfo/TourDetailsInfo";
 import { NavLink } from "react-router-dom";
 const FoundTourSection = ({ item }) => {
@@ -19,7 +18,7 @@ const FoundTourSection = ({ item }) => {
                </h3>
                <div className={cls.block_btn}>
                   <NavLink
-                     to={`/TourPackeges/Card/${item.id}`}
+                     to={`/TourPackages/Card/${item.id}`}
                      className={cls.btn_view_tour}
                   >
                      View tour

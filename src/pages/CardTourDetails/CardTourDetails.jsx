@@ -70,7 +70,7 @@ const CardTourDetails = () => {
                   </div>
                   <NavLink
                      className={cls.btn_buy}
-                     to={`/TourPackeges/Card/purchase/${tourId}/${chooseTime}`}
+                     to={`/TourPackages/Card/purchase/${tourId}/${chooseTime}`}
                   >
                      <button onClick={() => {}}>Buy Now</button>
                   </NavLink>

@@ -58,6 +58,7 @@
 
 .block_info{
    display: flex;
+   align-items: center;
    justify-content: space-between;
 }
 .buttonBack{
