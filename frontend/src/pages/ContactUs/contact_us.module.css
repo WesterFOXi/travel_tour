@@ -1,0 +1,114 @@
+.conteiner {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-color: #fca03096;
+   background-size: 150%;
+   margin-top: 150px;
+}
+
+.contact_us {
+   width: 1300px;
+   height: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.block_info {
+   width: 350px;
+}
+.block_info h1 {
+   padding: 5px 0;
+   font-size: 2.5rem;
+}
+.block_info > p {
+   font-weight: 600;
+   padding: 10px 0;
+}
+.block_info .block_info_contact p {
+   transform: translateX(-20px);
+   padding: 15px 10px;
+   margin: 10px;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+}
+.block_info .block_info_contact p:nth-child(2) {
+   background-color: rgba(250, 138, 2, 30%);
+   border-radius: 10px;
+   border: 2px solid #fa8b02;
+}
+.block_info .block_info_contact p svg {
+   color: #fa8b02;
+   margin-right: 10px;
+   transform: scale(1.4);
+}
+
+.block_form {
+   padding: 20px;
+   justify-content: space-around;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   height: 350px;
+   width: 500px;
+   background-color: rgb(255, 255, 255, 30%);
+}
+.block_form label {
+   display: flex;
+   flex-direction: column;
+}
+.block_form label {
+   font-weight: 600;
+}
+.block_form label input {
+   margin: 10px 0;
+   border-radius: 5px;
+   border: none;
+   padding: 10px;
+}
+
+.block_form button {
+   color: #fff;
+   border: none;
+   padding: 10px;
+   background-color: #fa8b02;
+   font-weight: 600;
+   font-size: 1rem;
+   border-radius: 10px;
+   width: 200px;
+   margin-inline: auto;
+   margin-top: 10px;
+   transition: .3s;
+}
+.block_map {
+   background-image: url("../../image//background_contact_us_block.png");
+   width: 100%;
+   margin: 10px 0;
+   background-size: 100%;
+   background-position: 0;
+   height: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid silver;
+   margin: 1px;
+}
+.block_map img{
+   border: none;
+}
+
+@media (max-width: 1100px) {
+   .block_info h1 {
+      font-size: 2rem;
+   }
+   .block_info p {
+      font-size: 0.9rem;
+   }
+   .block_info_contact p {
+      font-size: 0.9rem;
+   }
+   .block_form label {
+      font-size: 0.9rem;
+   }
+}

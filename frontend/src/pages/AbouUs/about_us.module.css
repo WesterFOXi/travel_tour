@@ -1,0 +1,79 @@
+.about_us_main_text {
+   width: 100%;
+   height: 100vh;
+   min-height: 600px;
+   background-image: url("../../image/background_about_us.png");
+   background-size: 100%;
+   background-position-y: -50px;
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   background-repeat: no-repeat;
+}
+.about_us_main_text::before {
+   content: "";
+   background-color: rgb(167, 167, 167);
+   position: absolute;
+   width: 100%;
+   z-index: -1;
+   height: 100%;
+}
+.block_main_text_ {
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.block_main_text_ h1 {
+   padding: 20px;
+   font-size: 3.5rem;
+   letter-spacing: 2px;
+   font-family: "Akaya Kanadaka";
+   font-weight: 500;
+}
+
+.block_main_text_ p {
+   font-weight: 600;
+   width: 700px;
+   text-align: center;
+   padding-bottom: 20px;
+}
+.button_view_tour {
+   background-color: transparent;
+   border: 2px solid #fff;
+   border-radius: 20px;
+   padding: 10px 20px;
+   font-size: 1.1rem;
+   transform: translateY(50px);
+   outline: none;
+   color: #fff;
+}
+@media (max-width: 1900px) {
+   .about_us_main_text {
+      background-size: 120%;
+      background-position: 50%;
+   }
+}
+@media (max-width: 1500px) {
+   .about_us_main_text {
+      background-size: 130%;
+   }
+}
+@media (max-width: 1350px) {
+   .about_us_main_text {
+      background-size: 160%;
+   }
+}
+@media (max-width: 1100px) {
+   .about_us_main_text {
+      height: 600px;
+   }
+   .block_main_text_ h1 {
+      font-size: 2rem;
+   }
+   .block_main_text_ p {
+      font-size: 0.9rem;
+   }
+}

@@ -1,0 +1,42 @@
+.conteiner {
+   max-width: 1100px;
+   margin-inline: auto;
+   margin-top: 120px;
+   padding: 5px;
+}
+.main_block {
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.notFindTickets {
+   border: 2px solid red;
+}
+.imgNotTickets {
+   border: none;
+}
+.grid_list {
+   border: 0.8px solid silver;
+   justify-content: space-between;
+   width: 100%;
+   border-radius: 15px;
+   padding: 10px;
+}
+.designation {
+   justify-content: space-between;
+   margin-bottom: 10px;
+   display: flex;
+}
+.name_tour,
+.payment_method,
+.status,
+.price {
+   /* border: 2px solid red; */
+   color: #7d7d7d;
+   font-weight: 600;
+   margin-right: 40px;
+}
+.name_tour {
+   min-width: 500px;
+}

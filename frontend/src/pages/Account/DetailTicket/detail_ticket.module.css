@@ -1,0 +1,31 @@
+.block_ticket {
+   margin-top: 20px;
+   border-top: 1px solid silver;
+   padding-top: 20px;
+   display: flex;
+   align-items: center;
+}
+.block_ticket img {
+   height: 100px;
+   border-radius: 10px;
+}
+.info_tour,
+.method,
+.price,
+.status {
+}
+
+.info_tour {
+   margin-left: 30px;
+   min-width: 350px;
+}
+.method {
+   margin-left: 65px;
+}
+.price {
+   margin-left: 160px;
+}
+
+.status {
+   margin-left: 100px;
+}

@@ -1,0 +1,18 @@
+
+.tour_includes {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   font-size: 0.9rem;
+   grid-gap: 0px 20px;
+}
+.tour_includes span {
+   font-weight: 600;
+}
+.tour_includes p {
+   margin: 10px 0;
+}
+.tour_includes svg {
+   color: #fa8b02;
+   margin-right: 10px;
+   transform: scale(1.3);
+}

@@ -1,0 +1,135 @@
+.public_team {
+   background-color: #fff;
+   border-radius: 0px 7px 7px 7px;
+   margin: 0 15px 15px 15px;
+   display: flex;
+   align-items: center;
+   text-wrap: nowrap;
+   padding: 5px;
+   transition: 0.3s;
+   height: 70px;
+   justify-content: flex-end;
+}
+.grid_conteiner {
+   display: flex;
+   margin-right: 5px;
+   align-items: center;
+}
+.btn_search {
+   background-color: #fa8b02;
+   border: none;
+   outline: none;
+   padding: 20px 20px 20px;
+   border-radius: 8px;
+   display: flex;
+   margin: 10px 10px 10px 0px;
+}
+.btn_search svg {
+   transform: scale(2);
+   color: #fff;
+}
+
+.btn_search:hover {
+   cursor: pointer;
+   filter: brightness(0.9);
+}
+
+.btn_search_off {
+   background-color: silver;
+}
+.btn_search_off:hover {
+   cursor: no-drop;
+}
+.btn_search_on {
+   background-color: #fa8b02;
+}
+.block_filter {
+   margin-inline: 10px;
+   min-width: 140px;
+   height: 50px;
+   border-right: 2px solid silver;
+   padding-right: 10px;
+}
+.block_filter:last-child {
+   border: none;
+}
+.block_filter:hover {
+   cursor: pointer;
+}
+.block_filter_name {
+   display: flex;
+   font-weight: 600;
+   align-items: center;
+}
+.block_filter_name svg {
+   margin-inline: 5px;
+   transform: scale(1.1);
+}
+
+.block_filter_body {
+   height: 20px;
+   margin-left: 3px;
+   transition: 0.5s;
+   background-color: #fff;
+}
+
+.block_filter_body p:hover {
+   color: #fff;
+   background-color: #fa8b02;
+}
+
+.block_filter_body p {
+   transition: 0.2s;
+   padding: 5px 10px;
+   border-bottom: 2px solid silver;
+   background-color: #fff;
+   flex-wrap: wrap;
+   display: flex;
+}
+
+.block_filter_body p:last-child {
+   border-radius: 0 0 5px 5px;
+}
+
+.block_filter_body_first {
+   display: flex;
+   align-items: center;
+}
+.block_filter_body_first svg {
+   margin-left: 10px;
+   display: flex;
+   justify-content: center;
+}
+.block_choose {
+   z-index: 1;
+   position: relative;
+   overflow-y: auto;
+   max-height: 150px;
+}
+.block_filter:nth-last-child(3) {
+   width: 220px;
+}
+.block_filter:nth-last-child(1) {
+   max-width: 110px;
+}
+.block_filter_body input {
+   border: none;
+   outline: none;
+   font-size: 0.9rem;
+   letter-spacing: 1px;
+}
+@media (max-width: 1100px) {
+   .public_team {
+      font-size: 14px;
+      height: 60px;
+      align-items: center;
+   }
+   .block_filter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .block_filter:nth-last-child(3) {
+      width: 190px;
+   }
+}

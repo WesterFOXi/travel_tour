@@ -1,0 +1,76 @@
+.home {
+   height: 100vh;
+   min-height: 600px;
+   background-image: url("../../image/background_home.png");
+   background-size: 100%;
+   width: 100%;
+   display: flex;
+   background-position: 0;
+   flex-direction: column;
+   background-repeat: no-repeat;
+   align-items: center;
+   justify-content: center;
+}
+
+.home_shadow {
+   min-height: 600px;
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   position: absolute;
+   background-color: #00000048;
+}
+.home_text {
+   transform: translateY(-30px);
+   z-index: 1;
+   color: #fff;
+}
+.home_first_text {
+   font-family: "Akaya Kanadaka";
+   font-size: 3.5rem;
+   transform: translateX(-250px);
+   letter-spacing: 4px;
+   font-weight: 500;
+}
+
+.home_last_text {
+   margin: 10px 0 20px 0;
+   font-family: "Open Sans";
+   font-weight: 700;
+}
+
+@media (max-width: 1900px) {
+   .home {
+      background-size: 120%;
+      background-position: 50%;
+   }
+}
+@media (max-width: 1500px) {
+   .home {
+      background-size: 130%;
+   }
+}
+@media (max-width: 1350px) {
+   .home {
+      background-size: 160%;
+   }
+}
+@media screen and (max-width: 1100px) {
+   .home {
+      height: 600px;
+      min-width: 1024px;
+   }
+   .home_shadow {
+      height: 600px;
+      min-width: 1024px;
+   }
+   .home_text {
+      transform: translate(0);
+   }
+   .home_first_text {
+      font-size: 2rem;
+   }
+   .home_last_text {
+      font-size: 1rem;
+   }
+}

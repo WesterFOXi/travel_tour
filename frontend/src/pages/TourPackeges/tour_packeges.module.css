@@ -1,0 +1,29 @@
+.tour_packeges {
+   width: 100vw;
+   min-width: 900px;
+   max-width: 1400px;
+   margin-inline: auto;
+}
+.tour_packeges h1 {
+   text-align: center;
+   margin-top: 120px;
+}
+
+.block_tour_cards {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.block_tour_cards > div {
+   margin: 40px 20px;
+}
+@media (max-width: 1100px) {
+   .block_tour_cards {
+      max-width: 900px;
+   }
+   .tour_packeges h1{
+      font-size: 1.8rem;
+   }
+}

@@ -1,0 +1,76 @@
+.popular_tour {
+   background-color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+   margin-bottom: 20px;
+   flex-direction: column;
+}
+.block_text_and_arrow {
+   align-items: center;
+   width: 1070px;
+   display: flex;
+   margin: 10px 0;
+   justify-content: space-between;
+}
+.block_text_and_arrow p {
+   font-weight: 700;
+   font-size: 1.5rem;
+}
+.button_arrow {
+   display: flex;
+}
+.button_arrow button {
+   align-items: center;
+   justify-content: center;
+   border: none;
+   outline: none;
+   width: 45px;
+   height: 45px;
+   padding: 15px;
+   border-radius: 50%;
+   margin: 5px;
+   transition: 0.1s;
+   display: flex;
+}
+
+.button_arrow button svg {
+   transform: scale(2);
+}
+.disabled {
+   color: rgb(135, 135, 135);
+   cursor: no-drop;
+}
+.disabled:hover {
+   cursor: no-drop;
+}
+.active {
+   background-color: #fa8b02;
+   color: #fff;
+}
+.active:hover {
+   filter: brightness(0.8);
+   cursor: pointer;
+}
+.cards_conteiner {
+   margin-top: 10px;
+   justify-content: center;
+   transition: 1s all;
+   display: flex;
+}
+
+@media (max-width: 1100px) {
+   .popular_tour {
+      max-width: 1024px;
+   }
+   .block_text_and_arrow {
+      max-width: 900px;
+   }
+   .block_text_and_arrow p {
+      font-size: 1.2rem;
+   }
+   .cards_conteiner {
+      max-width: 900px;
+   }
+}

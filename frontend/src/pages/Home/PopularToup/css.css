@@ -1,0 +1,13 @@
+.card-enter {
+   opacity: .8;
+}
+.card-enter-active {
+   opacity: .8;
+}
+.card-exit {
+   opacity: .8;
+}
+
+.card-exit-active {
+   opacity: .8;
+}

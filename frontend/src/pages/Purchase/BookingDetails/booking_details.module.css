@@ -1,0 +1,49 @@
+.conteiner {
+   width: 600px;
+}
+.info {
+   margin-bottom: 20px;
+   padding: 5px 10px;
+   border-radius: 5px;
+   border: 2px solid silver;
+}
+.info p {
+   font-weight: 600;
+   font-size: 1.1rem;
+}
+.info span svg {
+   margin-right: 5px;
+}
+.info span {
+   margin-top: 10px;
+   display: flex;
+   align-items: center;
+   width: 400px;
+}
+.count_tickets > p {
+   margin-bottom: 10px;
+   font-weight: 600;
+   font-size: 1.1rem;
+}
+
+.count_tickets .amount_price {
+   background-color: #efefef;
+   color: #666666;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   padding: 5px 20px;
+   list-style-position: initial;
+}
+.amount_price ul li {
+   margin: 5px;
+}
+.price {
+   color: #fa8b02;
+   font-weight: 600;
+   font-size: 1.2rem;
+}
+.block_cout_tickets {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}

@@ -1,0 +1,118 @@
+.login_modal {
+   width: 100vw;
+   height: 100vh;
+   min-height: 600px;
+   background-color: rgba(0, 0, 0, 0.538);
+   position: fixed;
+   z-index: 10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.conteiner_modal {
+   background-color: #fff;
+   border-radius: 15px;
+   width: 400px;
+   padding: 30px;
+}
+.conteiner_modal h2 {
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.conteiner_modal h2 svg:hover {
+   cursor: pointer;
+   filter: brightness(0.8);
+   transform: scale(1.3);
+   transition: 0.3s;
+}
+.block_form {
+   display: flex;
+   flex-direction: column;
+}
+.block_form label:not(:last-child) {
+   display: flex;
+   flex-direction: column;
+   margin: 5px 0;
+   color: rgb(131, 131, 131);
+   font-weight: 600;
+}
+.block_form label:hover {
+   cursor: pointer;
+}
+.block_form label input {
+   margin: 10px 0 0 0;
+   outline: none;
+   height: 40px;
+   border: none;
+   padding: 10px 0;
+}
+.block_form label input::placeholder {
+}
+.block_form label input:placeholder-shown {
+   border: 1px solid silver;
+   background-color: rgba(255, 221, 221, 0.375);
+   font-size: 0.9rem;
+   padding-left: 10px;
+   border-radius: 5px;
+   transition: 0.1s;
+}
+.block_form label input:placeholder-shown:hover {
+   border: 2px solid silver;
+}
+
+.block_form label input:active(:placeholder-shown) {
+}
+
+.block_form label input:not(:placeholder-shown) {
+   border: 2px solid silver;
+   border-radius: 5px;
+   background-color: rgba(237, 220, 220, 0.552);
+
+   padding-left: 10px;
+}
+.block_form button {
+   color: #fff;
+   border: none;
+   padding: 10px;
+   background-color: #fa8b02;
+   font-weight: 600;
+   font-size: 1rem;
+   border-radius: 20px;
+   width: 100%;
+   margin-top: 10px;
+   transition: 0.3s;
+}
+.checkboxAgree {
+   margin-top: 10px;
+   font-size: 0.9rem;
+}
+.checkboxAgree label {
+   display: flex;
+   margin: 0;
+   align-items: center;
+   color: rgb(105, 105, 105);
+   padding: 0;
+}
+.checkboxAgree label input {
+   height: 100%;
+}
+.checkboxAgree label input {
+   display: flex;
+   margin: 0 5px;
+}
+.swap_method_login_and_singUp {
+   margin-inline: auto;
+   margin: 10px auto 0;
+   font-size: 1rem;
+}
+.swap_method_login_and_singUp span {
+   cursor: pointer;
+   color: #fa8b02;
+}
+.swap_method_login_and_singUp span:hover {
+   filter: brightness(0.8);
+   text-decoration-line: underline;
+   transition: 0.3s;
+}

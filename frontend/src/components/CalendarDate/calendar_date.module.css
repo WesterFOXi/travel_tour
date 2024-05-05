@@ -1,0 +1,10 @@
+.calendar input {
+   border: none;
+   letter-spacing: 1px;
+   outline: none;
+   padding-left: 10px;
+   font-size: 1rem;
+   width: auto;
+   margin: 5px 0;
+}
+ 

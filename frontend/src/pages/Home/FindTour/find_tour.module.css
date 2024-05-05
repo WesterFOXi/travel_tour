@@ -1,0 +1,61 @@
+.section_find_tour {
+   z-index: 1;
+   flex-direction: column;
+   display: flex;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.22);
+}
+.section_button {
+   display: flex;
+}
+.section_find_tour_button {
+   border: none;
+   opacity: 0.8;
+   outline: none;
+   background-color: rgba(255, 255, 255, 0.333);
+   color: #fff;
+   font-family: "Open Sans";
+   font-weight: 600;
+   align-items: center;
+   padding: 7px 14px;
+   display: flex;
+   font-size: 1rem;
+   border-radius: 10px 0 0 0;
+   transition: 0.2s ease-in-out;
+   margin: 10px 0px 0px 15px;
+}
+.section_find_tour_button:hover {
+   cursor: pointer;
+   opacity: 1;
+}
+
+.active_btn {
+   opacity: 1;
+   background-color: #fff;
+   color: #fa8b02;
+}
+.section_find_tour_button:nth-child(2) {
+   border-radius: 0 10px 0 0;
+   margin-left: 0;
+}
+.logo_button {
+   transform: scale(1.1);
+   margin-right: 5px;
+}
+@media (max-width: 1100px) {
+   .section_find_tour_button {
+      font-size: 14px;
+   }
+}
+/*  
+@media (max-width: 1200px) {
+   .section_find_tour {
+      margin-inline: 10px;
+      transform: translateY(50px);
+   }
+}
+@media (max-width: 760px) {
+   .section_find_tour{
+      transform: translateY(30px);
+   }
+} */

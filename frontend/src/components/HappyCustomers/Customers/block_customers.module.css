@@ -1,0 +1,50 @@
+.block_customers {
+   display: flex;
+   border: 2px solid silver;
+   min-width: 300px;
+   border-radius: 20px;
+   margin: 20px 0;
+   flex-direction: column;
+   padding: 20px;
+   max-width: 550px;
+   align-items: center;
+   margin-inline: 20px;
+}
+.about_people {
+   padding-bottom: 40px;
+   font-weight: 500;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.about_people p {
+   font-weight: 600;
+}
+.about_people img {
+   object-fit: cover;
+
+   border-radius: 50%;
+   height: 80px;
+   width: 80px;
+}
+.block_review::after {
+   content: url("../../../image//avatar_customers//quotes.png");
+   display: flex;
+   float: right;
+}
+.block_review::before {
+   content: url("../../../image//avatar_customers//quotes.png");
+   display: flex;
+   float: left;
+   padding: 20px;
+   transform: translate(-30px, -60px);
+   position: absolute;
+}
+@media (max-width: 1100px) {
+   .about_people p {
+
+   }
+   .block_review{
+      font-size: .9rem;
+   }
+}

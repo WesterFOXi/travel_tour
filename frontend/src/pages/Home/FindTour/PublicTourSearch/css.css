@@ -1,0 +1,30 @@
+.entering,
+.entered {
+   width: 1070px;
+   /* width: 860px; */
+}
+
+.entering {
+   overflow: hidden;
+}
+.entered,
+.exited {
+   overflow: visible;
+}
+
+.exiting,
+.exited {
+   width: 870px;
+   /* width: 660px; */
+}
+@media (max-width: 1100px) {
+   .entered,
+   .entering {
+      width: 1000px;
+   }
+   .exited,
+   .exiting {
+      width: 830px;
+   }
+}
+

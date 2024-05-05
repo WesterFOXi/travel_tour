@@ -1,0 +1,10 @@
+.buttonIsActive {
+   border-bottom: 3px solid #FA8B02;
+   padding-inline: 2px;
+}
+.button {
+}
+.button:hover {
+   cursor: pointer;
+  filter: brightness(0.8);
+}

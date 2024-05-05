@@ -1,0 +1,35 @@
+.button {
+   background-color: #fa8b02;
+}
+.button:hover {
+   cursor: pointer;
+   filter: brightness(0.8);
+}
+.disebled {
+   background-color: silver;
+}
+.disebled:hover {
+   cursor: no-drop;
+}
+
+.block_nav_button {
+   display: flex;
+   align-items: center;
+}
+.block_nav_button button {
+   transition: 0.3s;
+   border: none;
+   display: flex;
+   outline: none;
+   margin: 5px;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   padding: 15px;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+}
+.block_nav_button button svg {
+   transform: scale(3);
+}
