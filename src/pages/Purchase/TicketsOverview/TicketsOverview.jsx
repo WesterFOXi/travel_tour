@@ -4,7 +4,7 @@ import { arr_cards_cour } from "../../Home/PopularToup/arr_cards_tour";
 import { LuCalendarDays } from "react-icons/lu";
 import { MdOutlineAccessTime } from "react-icons/md";
 
-const TicketsOverview = ({ params, setStage, countTickets }) => {
+const TicketsOverview = ({ params, setStage, isStage, countTickets }) => {
    const price_adult =
       arr_cards_cour[params.tourId - 1].price * countTickets[0].adult;
 
@@ -15,7 +15,8 @@ const TicketsOverview = ({ params, setStage, countTickets }) => {
 
    const all_price_total = price_adult + price_child;
    const clickNextSpen = () => {
-      setStage((prev) => prev + 1);
+      if (isStage !== 4) setStage((prev) => prev + 1);
+      return
    };
    return (
       <div className={cls.conteiner}>

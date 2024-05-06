@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
-import { NavLink, Outlet } from 'react-router-dom';
-import Header from './components/Header/Header';
-import AccountSingIn from './pages/AccountEntry/AccountSingIn/AccountSingIn';
-import AccountLogin from './pages/AccountEntry/AccountLogin/AccountLogin';
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import React, { useState } from "react";
+import { NavLink, Outlet } from "react-router-dom";
+import Header from "./components/Header/Header";
+import AccountSingIn from "./pages/AccountEntry/AccountSingIn/AccountSingIn";
+import AccountLogin from "./pages/AccountEntry/AccountLogin/AccountLogin";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+// import { sql } from "@vercel/postgres";
 const Layout = () => {
-
-   const [isOpenSingIn, setIsOpenSing] = useState(false)
-   const [isOpenLogin, setIsOpenLogin] = useState(false)
-   console.log(SpeedInsights);
+   // async function test() {
+   //    const { rows } = await sql`SELECT * from users `;
+   //    console.log(rows);
+   // }
+   // test();
+   const [isOpenSingIn, setIsOpenSing] = useState(false);
+   const [isOpenLogin, setIsOpenLogin] = useState(false);
    return (
       <>
          <SpeedInsights />
@@ -31,6 +35,6 @@ const Layout = () => {
          <Outlet />
       </>
    );
-}
+};
 
-export default Layout
+export default Layout;

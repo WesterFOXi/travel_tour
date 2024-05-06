@@ -1,0 +1,11 @@
+.conteiner {
+   border: 2px solid silver;
+   width: 600px;
+   height: 300px;
+   padding: 10px 20px;
+   border-radius: 10px;
+}
+.conteiner p {
+   font-weight: 600;
+   font-size: 1.2rem;
+}

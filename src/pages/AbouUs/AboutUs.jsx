@@ -12,7 +12,7 @@ const AboutUs = ({ }) => {
             <div className={cls.block_main_text_}>
                <h1>Our team cares about your full relax</h1>
                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
-               <NavLink to={'/TourPackeges'}>
+               <NavLink to={'/TourPackages'}>
                   <Button onClick={() => {
                   }} className={cls.button_view_tour}>View our Tour Packages</Button>
                </NavLink>

@@ -6,6 +6,7 @@ import TicketsOverview from "./TicketsOverview/TicketsOverview";
 import ButtonBack from "./../../components/ButtonBack/ButtonBack";
 import { useParams } from "react-router-dom";
 import DetailsBuy from "./DetailsBuy/DetailsBuy";
+import Payment from "./Payment/Payment";
 
 const Purchase = () => {
    const params = useParams();
@@ -47,24 +48,26 @@ const Purchase = () => {
                <p>Payment</p>
             </div>
          </div>
-
-         <div className={cls.block_info}>
-            {isStage === 1 && (
-               <BookingDetails
+         {isStage <= 3 && (
+            <div className={cls.block_info}>
+               {isStage === 1 && (
+                  <BookingDetails
+                     countTickets={countTickets}
+                     setCountTickets={setCountTickets}
+                     params={params}
+                  />
+               )}
+               {isStage === 2 && <DetailsBuy />}
+               {isStage === 3 && <Payment />}
+               <TicketsOverview
                   countTickets={countTickets}
-                  setCountTickets={setCountTickets}
+                  setStage={setStage}
                   params={params}
+                  isStage={isStage}
                />
-            )}
-            {isStage === 2 && <DetailsBuy />}
-            {/* {isStage === 3 && <Payment />} */}
-            <TicketsOverview
-               countTickets={countTickets}
-               setStage={setStage}
-               params={params}
-               isStage={isStage}
-            />
-         </div>
+            </div>
+         )}
+         {isStage === 4 && <h1>Great</h1>}
          {/* <button onClick={() => setStage((prev) => prev - 1)}>back</button>
          <button onClick={() => setStage((prev) => prev + 1)}>go</button> */}
       </div>

@@ -1,5 +1,32 @@
 .conteiner {
-   border: 2px solid silver;
    width: 600px;
-   height: 300px;
+}
+.conteiner h4 {
+   margin: 10px 20px;
+   font-size: 1.2rem;
+}
+.block_info {
+   display: flex;
+   padding-left: 20px;
+}
+.block_info div {
+   margin-bottom: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   width: 300px;
+}
+.block_info div label {
+   margin: 5px;
+   font-weight: 600;
+}
+.block_info div input {
+   min-width: 250px;
+   height: 30px;
+   padding: 10px;
+   border-radius: 5px;
+   border: 2px solid silver;
+   outline: none;
+}
+.block_info div input::placeholder {
+   padding: 5px 10px;
 }
