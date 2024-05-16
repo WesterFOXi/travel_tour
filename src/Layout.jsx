@@ -5,6 +5,8 @@ import AccountSingIn from "./pages/AccountEntry/AccountSingIn/AccountSingIn";
 import AccountLogin from "./pages/AccountEntry/AccountLogin/AccountLogin";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 // import { sql } from "@vercel/postgres";
+import Footer from "./components/Footer/Footer";
+
 const Layout = () => {
    // async function test() {
    //    const { rows } = await sql`SELECT * from users `;
@@ -33,6 +35,7 @@ const Layout = () => {
             />
          )}
          <Outlet />
+         <Footer />
       </>
    );
 };

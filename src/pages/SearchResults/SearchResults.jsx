@@ -2,12 +2,8 @@ import React from "react";
 import cls from "./search_result.module.css";
 import FoundTourSection from "./FoundTourSection/FoundTourSection";
 import { arr_cards_cour } from "../../pages/Home/PopularToup/arr_cards_tour";
-import { useNavigate } from "react-router-dom";
-import Button from "./../../components/Button/Button";
-import { IoArrowBack } from "react-icons/io5";
 import ButtonBack from "./../../components/ButtonBack/ButtonBack";
 const SearchResults = ({ arrDateSearch, setIsOpenTourDetails, isActive }) => {
-   const navigate = useNavigate();
 
    const sortTourPeople = isActive
       ? arrDateSearch.people === ""
@@ -19,10 +15,12 @@ const SearchResults = ({ arrDateSearch, setIsOpenTourDetails, isActive }) => {
       arrDateSearch.time === ""
          ? sortTourPeople
          : sortTourPeople.filter((el) => el.time === arrDateSearch.time);
+   
    const sortTourName =
       arrDateSearch.tour === ""
          ? sortTourTime
          : sortTourTime.filter((el) => el.name === arrDateSearch.tour);
+   
    const sortTourTransp =
       arrDateSearch.transport === ""
          ? sortTourName
